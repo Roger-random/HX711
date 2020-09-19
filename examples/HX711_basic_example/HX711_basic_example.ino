@@ -16,10 +16,10 @@ void loop() {
     long raw = scale.read();
     if (raw < -420000 && raw > -700000) {
       double lb = (raw + 429000)/11000.0;
-      if (lb > 0) {
+      if (lb >= 0.0) {
         Serial.print("+");
       }
-      if (lb < 10 && lb > -10) {
+      if (lb < 10.0 && lb > -10.0) {
         Serial.print(lb,5);
       } else {
         Serial.print(lb,4);
