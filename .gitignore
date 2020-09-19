@@ -18,3 +18,9 @@
 # PlatformIO virtualenv and pioenv
 /.venv*
 /.pioenvs
+
+# PlatformIO
+/.pio
+
+# Visual Studio code
+/.vscode
